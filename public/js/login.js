@@ -3,7 +3,7 @@ const loginText = document.getElementById('loginText');
 const loginSpinner = document.getElementById('loginSpinner');
 const togglePassword = document.getElementById("togglePassword");
 const passwordField = document.getElementById("password");
-const baseUrl = 'digital-vle.vercel.app';
+const baseUrl = 'https://vle-backend.vercel.app';
 const frontendBaseUrl = 'http://localhost:3000';
 
 document.getElementById('loginForm').addEventListener('submit', async function (event) {
