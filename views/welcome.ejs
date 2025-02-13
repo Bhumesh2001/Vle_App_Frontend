@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital-vle</title>
+    <link
+      rel="icon"
+      href="/assets/images/favicon_logo.jpg"
+      type="image/x-icon"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background: radial-gradient(circle, #1a1a1a, #0d0d0d);
+        color: #f0f0f0;
+        text-align: center;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+      }
+
+      .container {
+        max-width: 800px;
+        padding: 20px;
+      }
+
+      .welcome-box {
+        background: rgba(0, 0, 0, 0.3);
+        padding: 30px;
+        border-radius: 15px;
+        backdrop-filter: blur(15px);
+        box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .logo {
+        width: 80px;
+        margin-bottom: 10px;
+        filter: drop-shadow(0px 0px 5px rgba(255, 0, 0, 0.5));
+      }
+
+      .title {
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+
+      .subtitle {
+        font-size: 1.2rem;
+        font-weight: 300;
+        min-height: 30px;
+        color: #b3b3b3;
+      }
+
+      .highlight {
+        color: #ff073a; /* Neon Red */
+        font-weight: 600;
+        text-shadow: 0px 0px 10px #ff073a;
+      }
+
+      .features {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0;
+      }
+
+      .feature {
+        text-align: center;
+        width: 30%;
+        transition: 0.3s;
+      }
+
+      .feature:hover {
+        transform: scale(1.05);
+      }
+
+      .feature img {
+        width: 50px;
+        filter: drop-shadow(0px 0px 5px rgba(255, 7, 58, 0.5));
+      }
+
+      .feature h3 {
+        margin: 10px 0 5px;
+        color: #ff073a;
+        text-shadow: 0px 0px 5px #ff073a;
+      }
+
+      .buttons {
+        margin-top: 20px;
+      }
+
+      .btn {
+        text-decoration: none;
+        display: inline-block;
+        background: #ff073a;
+        color: #0d0d0d;
+        padding: 10px 20px;
+        border-radius: 8px;
+        margin: 5px;
+        font-weight: 600;
+        transition: 0.3s;
+        box-shadow: 0px 0px 10px #ff073a;
+      }
+
+      .btn:hover {
+        background: #ff3b5f;
+        box-shadow: 0px 0px 15px #ff3b5f;
+      }
+
+      .btn.outline {
+        background: transparent;
+        border: 2px solid #ff073a;
+        color: #ff073a;
+      }
+
+      .btn.outline:hover {
+        background: #ff073a;
+        color: #0d0d0d;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="welcome-box">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/2010/2010983.png"
+          alt="VLE Logo"
+          class="logo"
+        />
+        <h1 class="title">
+          🎓 Welcome to
+          <span class="highlight">INDEPENDENT DIGITAL VLE</span> Application!
+        </h1>
+        <p id="typed-text" class="subtitle"></p>
+
+        <div class="features">
+          <div class="feature">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/2995/2995462.png"
+              alt="Learning"
+            />
+            <h3>Flexible Learning</h3>
+            <p>Access courses anytime, anywhere.</p>
+          </div>
+          <div class="feature">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/2922/2922510.png"
+              alt="Instructors"
+            />
+            <h3>Expert Instructors</h3>
+            <p>Learn from industry-leading educators.</p>
+          </div>
+          <div class="feature">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/3658/3658944.png"
+              alt="Certificates"
+            />
+            <h3>Certification</h3>
+            <p>Earn recognized certificates.</p>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <a href="/admin/dashboard" class="btn">Go to Dashboard</a>
+          <a href="/admin" class="btn outline">Login</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var typed = new Typed("#typed-text", {
+          strings: [
+            "Empowering Learning, Anywhere & Anytime! 📚✨",
+            "Your Digital Classroom Awaits! 🚀",
+            "Explore, Learn, and Grow with VLE! 💡",
+          ],
+          typeSpeed: 50,
+          backSpeed: 25,
+          loop: true,
+        });
+      });
+    </script>
+  </body>
+</html>
