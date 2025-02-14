@@ -654,9 +654,9 @@ async function fetchData(url) {
             },
         });
 
-        // if (response.status === 401) {
-        //     window.location.href = `${frontendBaseUrl}/admin`;
-        // }
+        if (response.status === 401) {
+            window.location.href = `${frontendBaseUrl}/admin`;
+        }
 
         if (!response.ok) {
             throw new Error('Network response was not ok ' + response.statusText);
@@ -697,9 +697,9 @@ async function handleFormSubmission(
         });
         const data = await response.json();
 
-        // if (response.status === 401) {
-        //     window.location.href = `${frontendBaseUrl}/admin`;
-        // }
+        if (response.status === 401) {
+            window.location.href = `${frontendBaseUrl}/admin`;
+        }
 
         if (response.ok) {
             // successCallback(data);
@@ -727,9 +727,9 @@ async function submitSettingForm(form, url) {
             credentials: 'include'
         });
 
-        // if (response.status === 401) {
-        //     window.location.href = `${frontendBaseUrl}/admin`;
-        // }
+        if (response.status === 401) {
+            window.location.href = `${frontendBaseUrl}/admin`;
+        }
 
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
@@ -758,9 +758,9 @@ async function fetchSettingData() {
         ];
 
         const responses = await Promise.all(endpoints.map(url => fetch(url, { credentials: 'include' })));
-        // if (responses.some(response => response.status === 401)) {
-        //     window.location.href = `${frontendBaseUrl}/admin`;
-        // };
+        if (responses.some(response => response.status === 401)) {
+            window.location.href = `${frontendBaseUrl}/admin`;
+        };
         const settingsData = await Promise.all(responses.map(res => res.json()));
 
         function cleanSettingsData(data) {
@@ -954,6 +954,16 @@ function toggleProcessBtn(submitBtnId, processBtnId, isLoading) {
         processBtn.classList.add('d-none');
     };
 };
+
+// edit form toggle visibility
+
+// edit video from
+// if (doesElementExist('#video')) {
+//     const videoSection = document.getElementById('video');
+//     const editVideoPage = document.getElementById('edit_video');
+//     document.getElementById('edit-video').addEventListener('click', () => toggleVisibility(videoSection, editVideoPage));
+//     document.getElementById('back-btn_').addEventListener('click', () => goBack(videoSection, editVideoPage));
+// };
 
 // Event listeners for form submissions
 
