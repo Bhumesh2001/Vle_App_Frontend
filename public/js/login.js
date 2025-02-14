@@ -3,8 +3,12 @@ const loginText = document.getElementById('loginText');
 const loginSpinner = document.getElementById('loginSpinner');
 const togglePassword = document.getElementById("togglePassword");
 const passwordField = document.getElementById("password");
+
 const baseUrl = 'https://vle-backend.onrender.com';
 const frontendBaseUrl = 'https://vle-app-frontend.onrender.com';
+
+// const baseUrl = 'http://localhost:3001';
+// const frontendBaseUrl = 'http://localhost:3000';
 
 document.getElementById('loginForm').addEventListener('submit', async function (event) {
     event.preventDefault();

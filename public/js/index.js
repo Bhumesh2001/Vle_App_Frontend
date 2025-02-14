@@ -3,8 +3,12 @@ const uploadMethodRadios = document.querySelectorAll('input[name="uploadMethod"]
 const videoUploadField = document.getElementById("videoUploadField");
 const videoUrlField = document.getElementById("videoUrlField");
 const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+
 const baseUrl = 'https://vle-backend.onrender.com';
 const frontendBaseUrl = 'https://vle-app-frontend.onrender.com';
+
+// const baseUrl = 'http://localhost:3001';
+// const frontendBaseUrl = 'http://localhost:3000';
 let token_;
 
 // Sample data for the chart
