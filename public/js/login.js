@@ -4,7 +4,7 @@ const loginSpinner = document.getElementById('loginSpinner');
 const togglePassword = document.getElementById("togglePassword");
 const passwordField = document.getElementById("password");
 const baseUrl = 'https://vle-backend.onrender.com';
-const frontendBaseUrl = 'http://localhost:3000';
+const frontendBaseUrl = 'https://vle-app-frontend.onrender.com';
 
 document.getElementById('loginForm').addEventListener('submit', async function (event) {
     event.preventDefault();
