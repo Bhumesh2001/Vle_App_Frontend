@@ -3,7 +3,7 @@ const uploadMethodRadios = document.querySelectorAll('input[name="uploadMethod"]
 const videoUploadField = document.getElementById("videoUploadField");
 const videoUrlField = document.getElementById("videoUrlField");
 const successModal = new bootstrap.Modal(document.getElementById('successModal'));
-const baseUrl = 'https://vle-backend.vercel.app';
+const baseUrl = 'https://vle-backend.onrender.com';
 const frontendBaseUrl = 'http://localhost:3000';
 let token_;
 
